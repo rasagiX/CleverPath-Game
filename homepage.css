@@ -1,0 +1,260 @@
+*{
+    margin:0px;
+    padding: 0%;
+}
+
+#darkModeBtn{
+  margin-top:5px;
+  margin-left: 1485px;
+  font-family: 'Press Start 2P', monospace;
+  width: 30px;
+  height: 30px; 
+  border-radius: 15px 15px; 
+  border: none;
+  background-color: #000000; 
+  cursor: pointer; 
+  color:white;
+}
+.dark-mode #darkModeBtn{
+     background-color: white;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+ body.dark-mode{
+  background-color: black;
+ }
+#soundToggle{
+  margin-top: 5px;
+  margin-left: 1485px;
+  font-family: 'Press Start 2P', monospace;
+  width: 30px;
+  height: 30px; 
+  border-radius: 15px 15px; 
+  border: none;
+  background-color: #e9e7e7; 
+  cursor: pointer; 
+  color:rgb(7, 7, 7);
+}
+
+
+#cloud1 {
+    margin-top: 70px;      
+    margin-left: 0px;
+    opacity: 0;
+    animation: cloud1Ani 3s ease-out forwards 0s; 
+}
+@keyframes cloud1Ani{
+  0%{
+    margin-left: 0px;
+    opacity: 0;
+  }
+  100%{
+    margin-left: 100px;
+    opacity: 1;
+  }
+}
+.dark-mode #cloud1{
+  background-color: black;
+}
+
+#cloud2 {
+    position: absolute;
+    top: 140px;
+    right: 0px;
+    opacity: 0;
+    animation: cloud2Ani 3s ease-out forwards 0.3s;
+}
+.dark-mode #cloud2{
+  background-color: black;
+
+}
+@keyframes cloud2Ani{
+  0%{
+    margin-right: 0px;
+    opacity: 0;
+  }
+  100%{
+    margin-right: 100px;
+    opacity: 1;
+  }
+}
+.head {
+  margin-top: 120px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 700;
+  font-size: 90px;
+  text-align: center;
+  color: grey;
+  animation: headPop 1.4s ease-out forwards 1s;
+  opacity: 0;
+  transform-origin: top center;
+}
+.dark-mode .head{
+  background-color: black;
+}
+@keyframes headPop{
+  0% {
+    transform: translateY(-200px) scale(1.3);
+    opacity: 0;
+  }
+  40%{
+    transform: translateY(20px) scale(1);
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(-10px) scale(1.02);
+    opacity: 1;
+  }
+  80%{
+    transform: translateY(5px) scale(0.98);
+  }
+  100%{
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+.line {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: grey;
+  animation: linePop 1.4s ease-out forwards 1.2s;
+  opacity: 0;
+  transform: top center;
+}
+.dark-mode .line{
+  background-color: black;
+}
+@keyframes linePop{
+  0% {
+    transform: translateY(-200px) scale(1.3);
+    opacity: 0;
+  }
+  40%{
+    transform: translateY(20px) scale(1);
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(-10px) scale(1.02);
+    opacity: 0;
+  }
+  80%{
+    transform: translateY(5px) scale(0.98);
+  }
+  100%{
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+.start-btn{
+    align-items: center; 
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    animation: btnAni 1.2s cubic-bezier(0.15, 1.3, 0.5, 1) forwards 2s;
+    opacity: 0;
+}
+.dark-mode .start-btn{
+  background-color: black;
+}
+
+#start{
+    width: 190px;
+    height: 50px;
+    border: none;
+}
+.dark-mode #start{
+  background-color: black;
+}
+.start {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 500;
+  font-size: 20px;
+  width: 190px;
+  height:50px;
+  color: grey;
+  text-decoration: none;
+}
+.dark-mode .start{
+  background-color: black;
+}
+
+.start:hover{
+    color:rgb(46, 45, 45);
+}
+
+.dark-mode .start:hover{
+  color:rgb(205, 202, 202);
+}
+@keyframes btnAni {
+    0% {
+        transform: translateY(-300px) rotate(-25deg) scale(0.3);
+        opacity: 0;
+    }
+    40% {
+        transform: translateY(20px) rotate(5deg) scale(1.05);
+        opacity: 1;
+    }
+    60% {
+        transform: translateY(-10px) rotate(-2deg) scale(0.98);
+    }
+    80% {
+        transform: translateY(5px) rotate(1deg) scale(1.02);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg) scale(1);
+        opacity: 1;
+    }
+}
+
+.grnd{
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.7;
+  animation: grndAni 2s ease-out forwards 0.3s;
+}
+
+.dark-mode .grnd{
+  background-color: black;
+}
+@keyframes grndAni{
+  0%{
+    margin-bottom: 0px;
+  }
+  100%{
+    margin-bottom: 75px;
+  }
+}
+.dinos{
+     position: absolute;
+     bottom: 90px;
+     left:0px;
+     height: 180px;
+     z-index: 2;
+     opacity: 0.6;
+     animation: dinoAni 3s ease-out forwards 0.3s;
+}
+.dark-mode{
+  background-color: black;
+}
+@keyframes dinoAni{
+  0%{
+    margin-left: 0px;
+    opacity: 0;
+  }
+  100%{
+    margin-left: 70px;
+    opacity: 0.6;
+  }
+}

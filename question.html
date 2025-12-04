@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="question.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode" />
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <!-- dark mode -->
+    <button id="darkModeBtn">
+        <span class="material-symbols-outlined">dark_mode</span>
+    </button>
+
+
+    <!-- Sound button -->
+    <audio id="bgMusic" src="sound.mp3" loop></audio>
+    <button id="soundToggle">
+        <i class="fa fa-volume-up" style="font-size: 16px;"></i>
+    </button>
+
+
+        <!-- Clouds -->
+    <div class="clouds">
+    <img id="cloud1" src="Cloud.png">
+    <img id="cloud2" src="Cloud.png">
+    </div>
+
+    <!-- Level counter like level 1 ,2 and soon -->
+    <div id="levelCounter">Level 1</div>
+
+    <!-- Key Counter -->
+     <div id="keyCounter">Keys: 0</div>
+   
+   <!-- Questions block -->
+    <div id="quiz-container">
+    <div id="questionText"></div>
+    <div class ="opt">
+    <div id="options"></div>
+    </div>
+    <div id="feedback"></div>
+  </div>    
+    
+
+    <!-- Ground -->
+    <div class="ground">
+        <img class="dinos" src="Dinasour.png">
+        <img class="grnd"src="Ground.png">
+    </div>
+
+
+    <!-- loading page -->
+    <div id="loader">
+  <img src="https://www.gifcen.com/wp-content/uploads/2025/05/dinosaur-game-gif-1.gif" alt="Loading..." width="150px" height="150px">
+</div>
+
+
+<!-- Level Result Modal -->
+<div id="resultModal">
+  <div id="resultMessage" style=" background-color: 1.5em; margin-bottom: 1em;"></div>
+  <img id="resultGif" src="#" alt="Result GIF" style="border: none; width:300px; margin-bottom:1.5em;">
+  <button id="nextBtn" class="option-btn" style="margin:0.5em 0 0 0;">Next Level</button>
+  <button id="retryBtn" class="option-btn" style="margin:0.5em 0 0 0; display:none;">Try Again</button>
+</div>
+<script src="setting.js"></script>
+<script src="question.js"></script>
+</body>
+</html>

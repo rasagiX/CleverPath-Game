@@ -1,0 +1,298 @@
+*{
+    margin:0px;
+    padding: 0%;
+}
+#darkModeBtn{
+  margin-top:5px;
+  margin-left: 1485px;
+  font-family: 'Press Start 2P', monospace;
+  width: 30px;
+  height: 30px; 
+  border-radius: 15px 15px; 
+  border: none;
+  background-color: #000000; 
+  cursor: pointer; 
+  color:white;
+}
+.dark-mode #darkModeBtn{
+     background-color: white;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+ body.dark-mode{
+  background-color: black;
+ }
+
+ #soundToggle{
+  margin-top: 5px;
+  margin-left: 1485px;
+  font-family: 'Press Start 2P', monospace;
+  width: 30px;
+  height: 30px; 
+  border-radius: 15px 15px; 
+  border: none;
+  background-color: #e9e7e7; 
+  cursor: pointer; 
+  color:rgb(7, 7, 7);
+}
+#cloud1 {
+    margin-top: 70px;      
+    margin-left: 0px;
+    opacity: 0;
+    animation: slideCloud1 3s ease-out forwards 0s; 
+}
+@keyframes slideCloud1{
+    0%{
+    margin-left: 0px;
+    opacity: 0;
+  }
+  100%{
+    margin-left: 100px;
+    opacity: 1;
+  }
+}
+.dark-mode #cloud1{
+  background-color: black;
+}
+#cloud2 {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    opacity: 0;
+    animation: slideCloud3 3s ease-out forwards 0.3s;
+}
+@keyframes slideCloud3{
+      0%{
+    margin-right: 0px;
+    opacity: 0;
+  }
+  100%{
+    margin-right: 100px;
+    opacity: 1;
+  }
+}
+.dark-mode #cloud2{
+  background-color: black;
+
+}
+
+/* How to Play */
+.howtoplay{
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    opacity: 0;
+    animation: fadeHead 5s ease-out forwards 1s;
+}
+@keyframes fadeHead{
+    0%{
+     opacity: 0;   
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.dark-mode .howtoplay{
+    background-color: black;
+}
+.how-to-play {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 600;
+  font-size: 90px;
+  color: grey;
+  text-decoration: none;
+  text-align: center;
+}
+.dark-mode .how-to-play{
+    background-color: black;
+}
+.how-to-play:hover{
+    color: rgb(107, 106, 106);
+    
+}
+.dark-mode .how-to-play:hover{
+    color:white;
+}
+
+/* choosing the age category */
+.categories{
+   text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeCategory 5s ease-out forwards 1.5s;
+}
+.dark-mode .categories{
+    background-color: black;
+}
+@keyframes fadeCategory{
+    0%{
+     opacity: 0;   
+    }
+    100%{
+        opacity: 1;
+    }
+}
+h2{
+    font-family: "Press Start 2P" , system-ui;
+    font-size: 20px;
+    font-weight: 500;
+    color: grey;
+    margin-top: 20px;
+}
+.dark-mode h2{
+    background-color: black;
+}
+h2:hover{
+    cursor: pointer;
+}
+.categories-btn{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   
+}
+.dark-mode .categories-btn{
+    background-color: black;
+}
+#age1{
+    width: 190px;
+    height: 50px;
+    margin-top:15px;
+    border: 3px solid rgb(173, 169, 169); 
+    border-radius: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.dark-mode #age1{
+    background-color: black;
+}
+.age1 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 500;
+  font-size: 20px;
+  color: grey;
+  text-decoration: none;
+}
+
+.age1:hover{
+    color:rgb(46, 45, 45);
+}
+
+#age2{
+    width: 190px;
+    height: 50px;
+    margin-top:20px;
+    border: 3px solid rgb(173, 169, 169); 
+    border-radius: 10px;
+    margin-right: 20px;
+     cursor: pointer;
+}
+.dark-mode #age2{
+    background-color: black;
+}
+.age2 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 500;
+  font-size: 20px;
+  width: 190px;
+  height:50px;
+  color: grey;
+  text-decoration: none;
+}
+
+.age2:hover{
+    color:rgb(46, 45, 45);
+}
+
+#age3{
+    width: 190px;
+    height: 50px;
+    margin-top:20px;
+    border: 3px solid rgb(173, 169, 169); 
+    border-radius: 10px;
+     cursor: pointer;
+}
+.dark-mode #age3{
+    background-color: black;
+}
+.age3 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 500;
+  font-size: 20px;
+  width: 190px;
+  height:50px;
+  color: grey;
+  text-decoration: none;
+}
+
+.age3:hover{
+    color:rgb(46, 45, 45);
+}
+
+
+
+.line {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: grey;
+}
+
+.grnd{
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.7;
+  animation: slideGrnd 2s ease-out forwards 0.3s;
+}
+@keyframes slideGrnd{
+    0%{
+        margin-bottom: 0px;
+    }
+    100%{
+        margin-bottom: 75px;
+    }
+}
+.dinos{
+     position: absolute;
+     bottom: 90px;
+     left:0px;
+     height: 180px;
+     z-index: 2;
+     opacity: 0.6;
+     animation: slideDino 3s ease-out forwards 0.3s;
+}
+@keyframes slideDino{
+    0%{
+        margin-left: 0px;
+        opacity: 0;
+    }
+    100%{
+        margin-left: 70px;
+        opacity: 0.6;
+    }
+}
+ #loader{
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none;
+ }
+.dark-mode #loader{
+    background-color: black;
+}

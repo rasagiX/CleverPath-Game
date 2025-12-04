@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Categories</title>
+    <link rel="stylesheet" href="category.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode" />
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- dark mode -->
+    <button id="darkModeBtn">
+        <span class="material-symbols-outlined">dark_mode</span>
+    </button>
+    <!-- Sound Button -->
+     <audio id="bgMusic" src="sound.mp3" loop></audio>
+    <button id="soundToggle">
+        <i class="fa fa-volume-up" style="font-size: 16px;"></i>
+    </button>
+        <!-- Clouds -->
+    <div class="clouds">
+    <img id="cloud1" src="Cloud.png">
+    <img id="cloud2" src="Cloud.png">
+    </div>
+        
+    <!--How to Play-->
+    <div class="howtoplay">
+        <h1><a class ="how-to-play" href="#">
+            HOW TO PLAY 
+        </a></h1>
+    </div>
+
+    <!--Select the Age Category-->
+    <div class="categories">
+    <h2>Select Category According To Your Age:</h2>
+     <div class="category-btn">
+    <button id="age1"><a  class="age1" href ="question.html">Age 5-11 </a></button>
+    <button id="age2"><a  class="age2" href ="question2.html">Age 12-18 </a></button>
+    <button id="age3"><a  class="age3" href ="question3.html">Age 18 + </a></button>
+    </div>
+     </div>
+    
+    <!-- Ground -->
+    <div class="ground">
+        <img class="dinos" src="Dinasour.png">
+        <img class="grnd"src="Ground.png">
+    </div>
+
+
+    <div id="loader">
+  <img src="https://www.gifcen.com/wp-content/uploads/2025/05/dinosaur-game-gif-1.gif" alt="Loading..." width="150px" height="150px">
+</div>
+<script src="setting.js"></script>
+<script src="category.js"></script>
+</body>
+</html>

@@ -144,7 +144,7 @@ document.getElementById("nextBtn").onclick = () => {
   // If 3 keys → Go to maze
   if (keys >= 3) {
     localStorage.setItem("returnQuestion", currentQuestion);
-    window.location.href = "maze2.html";
+    window.location.href = "maze3.html";
     return;
   }
 

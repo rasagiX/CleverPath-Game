@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maze Game</title>
+  <link rel="stylesheet" href="maze2.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode" />
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- dark mode -->
+    <button id="darkModeBtn">
+        <span class="material-symbols-outlined">dark_mode</span>
+    </button>
+
+
+    <!-- Sound button -->
+    <audio id="bgMusic" src="sound.mp3" loop></audio>
+    <button id="soundToggle">
+        <i class="fa fa-volume-up" style="font-size: 16px;"></i>
+    </button>
+
+  <div class="container">
+    <h2>Maze Bonus Game</h2>
+
+<div>Time Left: <span id="mazeTimer"></span></div>
+
+    <canvas id="maze"></canvas>
+
+    <div class="controls">
+    <button id="finishMazeBtn">Finish Maze</button>
+      <button id="new">New Maze</button>
+    <button id="skipBtn">Skip</button>
+      <button id="reset">Reset Player</button>
+      <p class="info">Controls: Arrow keys / WASD. Tap a cell to move on touch.</p>
+    </div>
+  </div>
+<div id="mazeLoading" >
+  <img src="https://www.gifcen.com/wp-content/uploads/2025/05/dinosaur-game-gif-1.gif" alt="Loading..." width="150px" height="150px">
+</div>
+  <script src="setting.js"></script>
+  <script src="maze2.js"></script>
+</body>
+</html>

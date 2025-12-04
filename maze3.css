@@ -1,0 +1,126 @@
+/* Center everything on the page */
+*{
+    margin:0px;
+    padding: 0%;
+}
+#darkModeBtn{
+  margin-top:5px;
+  margin-left: 1485px;
+  font-family: 'Press Start 2P', monospace;
+  width: 30px;
+  height: 30px; 
+  border-radius: 15px 15px; 
+  border: none;
+  background-color: #000000; 
+  cursor: pointer; 
+  color:white;
+}
+.dark-mode #darkModeBtn{
+     background-color: white;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+ body.dark-mode{
+  background-color: black;
+ }
+
+ #soundToggle{
+  margin-top: 5px;
+  margin-left: 1485px;
+  font-family: 'Press Start 2P', monospace;
+  width: 30px;
+  height: 30px; 
+  border-radius: 15px 15px; 
+  border: none;
+  background-color: #e9e7e7; 
+  cursor: pointer; 
+  color:rgb(7, 7, 7);
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+canvas {
+  background: white;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  padding: 10px 15px;
+  margin: 5px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.timer {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.info {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.meta {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.small {
+  font-size: 12px;
+  color: #555;
+}
+#mazeLoading{
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none;
+}
+.dark-mode #mazeLoading{
+  background-color: #000000;
+}

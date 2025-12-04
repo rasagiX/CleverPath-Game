@@ -1,0 +1,184 @@
+*{
+    margin:0px;
+    padding: 0%;
+}
+
+#cloud1 {
+    margin-top: 40px;      
+    margin-left: 100px; 
+}
+
+#cloud2 {
+    margin-top: 0px;
+    margin-left: 1250px;
+}
+#darkModeBtn{
+  margin-top:5px;
+  margin-left: 1485px;
+  font-family: 'Press Start 2P', monospace;
+  width: 30px;
+  height: 30px; 
+  border-radius: 15px 15px; 
+  border: none;
+  background-color: #000000; 
+  cursor: pointer; 
+  color:white;
+}
+.dark-mode #darkModeBtn{
+     background-color: white;
+}
+
+#soundToggle{
+  margin-top: 5px;
+  margin-left: 1485px;
+  font-family: 'Press Start 2P', monospace;
+  width: 30px;
+  height: 30px; 
+  border-radius: 15px 15px; 
+  border: none;
+  background-color: #e9e7e7; 
+  cursor: pointer; 
+  color:rgb(7, 7, 7);
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+ body.dark-mode{
+  background-color: black;
+ }
+
+/* level counter */
+#levelCounter{
+  margin-top: 10px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 22px;
+  text-align: center;
+  color: #474545;
+  letter-spacing: 2px;
+ }
+ .dark-mode #levelCounter{
+    color: rgb(234, 233, 233);
+ }
+ #keyCounter{
+     font-family: 'Press Start 2P', monospace;
+     font-size: 15px;
+     text-align: center;
+     margin-top: 3px;
+     color:#333;
+ }
+ .dark-mode #keyCounter{
+    color: rgb(234, 233, 233);
+ }
+
+ /* question Display */
+ #quiz-container {
+    margin-top: 60px;
+    margin-left:100px;
+    margin-right:200px;
+  border: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: 'Press Start 2P',system-ui;
+  flex-direction:column;
+}
+
+#questionText {
+text-align: center;
+align-items: center;
+justify-content: center;
+font-family:'Press Start 2P', system-ui;
+  font-size: 30px;
+  color: grey;
+  text-transform: uppercase;
+}
+
+
+.option-btn {
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+font-family: 'Press Start 2P',system-ui;
+  display: inline-block;
+  width: 15em;
+  margin: 1em 0.7em;
+  padding: 1em 0;
+  border: 3px solid #444;
+  color: #333;
+  font-family: inherit;
+  font-size: 0.9em;
+  box-shadow: 3px 3px 0 #222;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+
+.option-btn:hover,
+.option-btn:focus {
+  background: #ddd;
+  border-color: #292929;
+}
+
+#feedback {
+  margin-top: 2em;
+  font-weight: bold;
+  font-size: 1em;
+  color: #252626;
+  letter-spacing: 2px;
+  font-family: 'Press Start 2P',system-ui;
+}
+
+
+
+.grnd{
+  position: absolute;
+  bottom: 75px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.7;
+}
+.dinos{
+     position: absolute;
+     bottom: 90px;
+     left:0px;
+     height: 180px;
+     z-index: 2;
+     opacity: 0.6;
+}
+#loader{
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none;
+}
+.dark-mode #loader{
+  background-color: #000000;
+}
+#resultModal{
+  display: none;
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
+  height: 100vh;
+  background-color: white; 
+  z-index: 2000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Press Start 2P', monospace;
+}
+.dark-mode #resultModal{
+  background-color: #000000;
+  color: white;
+}

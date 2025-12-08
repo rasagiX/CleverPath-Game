@@ -56,25 +56,25 @@
         start.visited = true;
         stack.push(start);
 
-        while (stack.length) {
-            let current = stack[stack.length - 1];
-            let n = getNeighbors(current);
+    //     while (stack.length) {
+    //         let current = stack[stack.length - 1];
+    //         let n = getNeighbors(current);
 
-            if (n.length > 0) {
-                const pick = n[Math.floor(Math.random() * n.length)];
-                const next = pick.cell;
-                const d = pick.dir;
+    //         if (n.length > 0) {
+    //             const pick = n[Math.floor(Math.random() * n.length)];
+    //             const next = pick.cell;
+    //             const d = pick.dir;
 
-                current.walls[d] = false;
-                next.walls[(d + 2) % 4] = false;
-                next.visited = true;
+    //             current.walls[d] = false;
+    //             next.walls[(d + 2) % 4] = false;
+    //             next.visited = true;
 
-                stack.push(next);
-            } else {
-                stack.pop();
-            }
-        }
-    }
+    //             stack.push(next);
+    //         } else {
+    //             stack.pop();
+    //         }
+    //     }
+    // }
 
     function getNeighbors(cell) {
         const dirs = [ [0,-1], [1,0], [0,1], [-1,0] ];

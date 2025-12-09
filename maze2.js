@@ -95,7 +95,8 @@
     // ---------------------------------------
     function drawMaze() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.strokeStyle = "black";
+        // ctx.strokeStyle = "black";
+        ctx.strokeStyle = document.body.classList.contains("dark-mode")? "white" : "black";
         ctx.lineWidth = 2;
 
         for (let c of grid) {

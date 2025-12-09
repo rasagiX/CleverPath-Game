@@ -11,7 +11,7 @@
     const skipBtn = document.getElementById('skipBtn');   // NEW BUTTON
     const timerDisplay = document.getElementById("mazeTimer");
 
-    let cols = 26, rows = 18, cellSize = 28;
+    let cols = 28, rows = 20, cellSize = 25;
     let grid = [], stack = [], solutionPath = null;
     let player = { x: 0, y: 0 };
     let goal = { x: 0, y: 0 };
@@ -95,7 +95,11 @@
     // ---------------------------------------
     function drawMaze() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.strokeStyle = "black";
+        // ctx.strokeStyle = "black";
+        ctx.strokeStyle = document.body.classList.contains("dark-mode")
+  ? "white"
+  : "black";
+
         ctx.lineWidth = 2;
 
         for (let c of grid) {

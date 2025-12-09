@@ -11,7 +11,7 @@
     const skipBtn = document.getElementById('skipBtn');   // NEW BUTTON
     const timerDisplay = document.getElementById("mazeTimer");
 
-    let cols = 26, rows = 18, cellSize = 28;
+    let cols = 19, rows = 19, cellSize = 30;
     let grid = [], stack = [], solutionPath = null;
     let player = { x: 0, y: 0 };
     let goal = { x: 0, y: 0 };

@@ -6,7 +6,7 @@ CleverPath is a browser-based game that combines an age-based trivia quiz with a
 # How it works:
 1. The player first selects an age group (5–11, 12–18, 18+).
 2. The game shows multiple-choice questions tailored to the selected age group.
-3. If the player answers a question correctly on the first attempt, they earn a key.
+3. If the player answers a question correctly, they earn a key.
 4. After collecting 3 keys, a bonus Maze Runner game is unlocked.
 The interface includes level indicators, a key counter, dark mode toggle, background music, and small animations for correct/wrong answers.
 
